@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import reset from '../assets/css/reset.css'
 
 Vue.use(Vuex)
 
