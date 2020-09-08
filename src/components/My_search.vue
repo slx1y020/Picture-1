@@ -77,7 +77,7 @@
 
 	/* 内容区 */
 	.searchContent {
-		width: 1000px;
+		/* width: 100%; */
 		height: 100%;
 		margin: 0 auto;
 		text-align: center;
@@ -86,7 +86,7 @@
 
 	/* 文字设置 */
 	.searchText {
-		padding-top: 15%;
+		padding-top: 160px;
 	}
 
 	.searchText span:first-child {
@@ -105,7 +105,7 @@
 
 	/* input 输入框*/
 	.searchInput {
-		width: 60%;
+		width: 600px;
 		height: 30px;
 		margin-top: 12px;
 		border-radius: 5px;
