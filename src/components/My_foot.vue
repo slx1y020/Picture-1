@@ -10,6 +10,7 @@
 						<li>商务合作</li>
 						<li>App</li>
 					</ul>
+					<br>
 					<div class="footText">
 						<span><img src="../assets/img/jianguan.png"></span>
 						<span>昌平区市场监督管理局龙泽园所投诉举报电话：010-81748909 营业执照</span>
@@ -17,7 +18,18 @@
 					</div>
 				</div>
 				<!-- 脚右边内容 -->
-				<div class="footRight"></div>
+				<div class="footRight">
+					<div>
+						<span>免费图库在线WWW.TMOOC.CN 专注于免费素材搜集</span><br>
+						<span>涵盖若干分类，致力于打造权威的图库平台</span>
+					</div>
+					<div>
+						<img src="../assets/img/erweima.jpg"><!-- 75 -->
+					</div>
+					
+					
+					
+				</div>
 			</div>
 		</div>
 	</div>
@@ -57,18 +69,44 @@
 	.footleft>ul>li:nth-child(n+2){
 		border-left: 1px solid #999;
 	}
-	.footText span:first-child{
-		padding: 2px;
+	.footText{
+		margin-top: 5px;
+		width: 100%;
 	}
 	.footText>span{
 		color: #fff;
 		padding-left: 5px;
-		font-size: 12px;
+		
 	}
 	.footText p{
 		width: 100%;
 		font-size: 10px;
 		color: #999;
+		padding-left: 5px;
 	}
 	/* /////////////////////////////////////////// */
+	.footRight{
+		/* display: flex; */
+		text-align: right;
+		color: #999;
+		font-size: 13px;
+		
+	}
+	.footRight>div:first-child{
+		width: 85%;
+		height: 100%;
+		float: left;
+		padding-top: 75px;
+		box-sizing: border-box;
+	}
+	.footRight div:nth-child(2){
+		width: 15%;
+		float: left;
+		text-align: left;
+		padding-top: 50px;
+	}
+	.footRight img{
+		margin-left: 10px;
+		width: 75px;
+	}
 </style>
