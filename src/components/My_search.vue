@@ -1,6 +1,8 @@
 <template>
 	<div>
 		<div class="searchImg">
+			<!-- 设置图片模糊效果 -->
+			<!-- <div class="bg bg-blur"></div> -->
 			<div class="searchContent">
 				<!-- 搜索框上面的标题文字 -->
 				<div class="searchText">
@@ -12,13 +14,18 @@
 				<!-- 搜索框下面的分类 -->
 				<div class="searchAssortment">
 					<span>流行图片：</span>
-					<span>流行图片：</span>
-					<span>流行图片：</span>
-					<span>流行图片：</span>
-					<span>流行图片：</span>
-					<span>流行图片：</span>
-					<span>流行图片：</span>
-					<span>流行图片：</span>
+					<span>背景，</span>
+					<span>自然，</span>
+					<span>学校，</span>
+					<span>商业，</span>
+					<span>食品，</span>
+					<span>办公室，</span>
+					<span>计算机，</span>
+					<span>爱情，</span>
+					<span>金钱，</span>
+					<span>鲜花，</span>
+					<span>狗</span>
+					<span>....</span>
 				</div>
 			</div>
 		</div>
@@ -29,17 +36,44 @@
 </script>
 
 <style>
+	* {
+		margin: 0;
+		padding: 0;
+	}
+
 	.searchImg {
 		height: 528px;
 		/* 背景图片居中 */
 		background-position: center center;
 		/* 设置背景图片 */
-		background-image: url(../assets/img/12-48-41-329_1920x430.webp);
+		/* background-image: url(../assets/img/12-48-41-329_1920x430.webp); */
+		background-image: url(../assets/img/20-58-28-361_1920x430.webp);
 		/* 背景不重复 */
 		background-repeat: no-repeat;
 		/* 背景从满div */
 		background-size: cover;
 	}
+
+
+	/* 图片模糊效果 */
+/* 	.bg{
+	    background-image:url(../assets/img/20-58-28-361_1920x430.webp);
+	    width:100%;
+	    height:100%;
+			z-index: -1;
+	}
+	.bg-blur{
+	    float:left;
+	    background-position:center;
+	    background-repeat:no-repeat;
+	    background-size:cover;
+	    -webkit-filter: blur(9px);
+	    -moz-filter: blur(9px);
+	    -o-filter: blur(9px);
+	    -ms-filter: blur(9px);
+			模糊度
+	    filter:blur(2px);
+	 } */
 
 	/* 内容区 */
 	.searchContent {
@@ -47,12 +81,12 @@
 		height: 100%;
 		margin: 0 auto;
 		text-align: center;
-		border: 1px solid red;
+		/* border: 1px solid red; */
 	}
 
 	/* 文字设置 */
 	.searchText {
-		margin-top: 30px;
+		padding-top: 15%;
 	}
 
 	.searchText span:first-child {
@@ -63,7 +97,7 @@
 	}
 
 	.searchText span:last-child {
-		margin: 10px;
+		margin: 25px;
 		font-size: 16px;
 		color: #fff;
 		display: block;
@@ -71,9 +105,21 @@
 
 	/* input 输入框*/
 	.searchInput {
-		width: 65%;
-		height: 45px;
+		width: 60%;
+		height: 30px;
+		margin-top: 12px;
 		border-radius: 5px;
+		padding: 11px 0px 11px 20px;
 		border: 0;
+	}
+
+	/* 标签文字 */
+	.searchAssortment {
+		margin-top: 8px;
+	}
+
+	.searchAssortment span {
+		font-size: 14px;
+		color: #fff;
 	}
 </style>
