@@ -64,13 +64,13 @@
 		color: #999;
 		float: left;
 		width: 25%;
-		margin-top: 10%;
+		margin-top: 12%;
 	}
 	.footleft>ul>li:nth-child(n+2){
 		border-left: 1px solid #999;
 	}
 	.footText{
-		margin-top: 5px;
+		margin-top: 20px;
 		width: 100%;
 	}
 	.footText>span{
@@ -96,14 +96,14 @@
 		width: 85%;
 		height: 100%;
 		float: left;
-		padding-top: 75px;
+		padding-top:95px;
 		box-sizing: border-box;
 	}
 	.footRight div:nth-child(2){
 		width: 15%;
 		float: left;
 		text-align: left;
-		padding-top: 50px;
+		padding-top: 65px;
 	}
 	.footRight img{
 		margin-left: 10px;
