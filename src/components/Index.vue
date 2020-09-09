@@ -6,7 +6,7 @@
 		<div class="img-item"><img src="../assets/content/02.webp" alt=""></div>
 		<div class="img-item"><img src="../assets/content/03.jpg" alt=""></div>
 		<div class="img-item"><img src="../assets/content/04.webp" alt=""></div>
-		<div class="img-item"><img src="../assets/content/05.jpg" alt=""></div>
+<!-- 		<div class="img-item"><img src="../assets/content/05.jpg" alt=""></div>
 		<div class="img-item"><img src="../assets/content/06.webp" alt=""></div>
 		<div class="img-item"><img src="../assets/content/07.jpg" alt=""></div>
 		<div class="img-item"><img src="../assets/content/08.webp" alt=""></div>
@@ -22,7 +22,8 @@
 		<div class="img-item"><img src="../assets/content/018.webp" alt=""></div>
 		<div class="img-item"><img src="../assets/content/019.webp" alt=""></div>
 		<div class="img-item"><img src="../assets/content/020.webp" alt=""></div>
-		<div class="img-item"><img src="../assets/content/021.webp" alt=""></div>
+		<div class="img-item"><img src="../assets/content/021.webp" alt=""></div> -->
+		<button @click="btn">点我</button>
 	</div>
 </template>
 
@@ -33,6 +34,13 @@
 
 			}
 		},
+		methods:{
+			btn(){
+				this.axios.get('/picture').then({
+					
+				})
+			}
+		}
 	}
 </script>
 
