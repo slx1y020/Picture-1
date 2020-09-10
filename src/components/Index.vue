@@ -2,7 +2,8 @@
 	<div class="pubu">
 		<div class="img-item" v-for="(item,i) of imgArr" :key="i">
 			<router-link :to="`/home`">
-				<img src="../assets/content/01.jpg" alt="">
+				<img :src="item.src" alt="">
+				<!-- <img src="../assets/content/13.jpg" alt=""> -->
 			</router-link>
 		</div>
 	</div>
@@ -12,16 +13,22 @@
 	export default {
 		data() {
 			return {
-				data:{},
 				imgArr: [],
 			}
 		},
 		mounted() {
 			this.axios.get('/picture').then((res) => {
-				this.imgArr=res.data.results;
 				console.log(res.data.results)
-				
+				let imgSrc=res.data.results;
+				imgSrc.forEach((item)=>{
+					item.src=require('../assets/content/'+item.src);
+					this.imgArr.push(item)
+				})
+				// console.log(this.imgArr)
 			})
+		},
+		methods:{
+			
 		}
 
 	}

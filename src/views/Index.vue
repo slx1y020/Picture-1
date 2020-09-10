@@ -14,7 +14,7 @@
 		components:{
 			My_search,
 			My_foot,
-			Index
+			Index,
 		}
 	}
 </script>
