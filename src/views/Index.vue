@@ -1,8 +1,8 @@
 <template>
 	<div>
-		<My_search></My_search>
+		<!-- <My_search></My_search> -->
 		<Index></Index>
-		<My_foot></My_foot>
+		<!-- <My_foot></My_foot> -->
 	</div>
 </template>
 
