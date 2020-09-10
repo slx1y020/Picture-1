@@ -1,25 +1,22 @@
 <template>
   <div class="home">
-    <a href="#">
-      <img
-        alt="Vue logo"
-        src="../assets/pixoboy.jpg"
-        style="margin-left:20px;margin-top:10px;float:left;"
-      />
-    </a>
     <div id="left">
-      <a href="#">背景</a>
-      <a href="#">自然</a>
+      <div>
+        <a href="#">
+          <img
+            alt="Vue logo"
+            src="../assets/pixoboy.jpg"
+            style="float:left;
+            "
+          />
+        </a>
+      </div>
+      <a href="#" style="margin-left:50px">背景</a>
       <a href="#">学校</a>
       <a href="#">商业</a>
       <a href="#">食品</a>
       <a href="#">办公</a>
       <a href="#">科技</a>
-      <a href="#">爱情</a>
-      <a href="#">金钱</a>
-      <a href="#">天空</a>
-      <a href="#">鲜花</a>
-      <a href="#">狗</a>
     </div>
 
     <div id="right">
@@ -29,11 +26,12 @@
       </a>
       <a href="#">
         登录
-        <span>|</span>
+       
       </a>
+       <span></span>
       <a href="#">加入</a>
       <button>
-        <img src="../assets/_20200908201834.png" />上传
+        <img src="../assets/_20200908201834.png" />上载
       </button>
     </div>
   </div>
@@ -52,42 +50,56 @@ export default {
 </script>
 
 <style>
+
 div > a:nth-child(2) > p {
   margin-left: 60px;
 }
 .home {
-  width: 100%;
+  width: 1800px;
   height: 50px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
 }
 #left {
+  width: 65%;
   float: left;
   margin-top: 13px;
-  margin-left: 50px;
 }
+
 #left > a {
-  width: 60px;
+  width: 80px;
   display: inline-block;
   text-decoration: none;
   color: black;
   font-size: 15px;
+  line-height: 40px;
 }
 
 #right {
+  width: 35%;
   float: right;
-  margin-top: 5px;
-  margin-right: 70px;
+  margin-top: 13px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-wrap: nowrap;
 }
 #right > a {
+  text-align: center;
+
   width: 80px;
   display: inline-block;
   text-decoration: none;
   color: black;
   font-size: 15px;
 }
-#right > a:nth-child(2) > span {
+#right > span {
+  width: 2px;
+  height: 25px;
   font-size: 30px;
-  color: #eeeeee;
-  margin-left: 20px;
+  background-color: #eeeeee;
+  
 }
 #right > a > img {
   width: 20px;
@@ -104,6 +116,9 @@ div > a:nth-child(2) > p {
   border-radius: 30px;
   color: white;
   font-size: 14px;
+   position: relative;
+  top: 5px;
+ 
 }
 #right > button:hover {
   background: #02b468;
