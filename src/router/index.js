@@ -1,22 +1,27 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
 
 Vue.use(VueRouter)
-
+import Detailspage  from "../views/Detailspage.vue"
+import header from"../components/header_nav.vue"
+import details from"../components/details.vue"
+import comment from"../components/comments.vue"
   const routes = [
   {
     path: '/',
-    name: 'Home',
-    component: Home
+    component: Detailspage
   },
   {
-    path: '/about',
-    name: 'About',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
+    path: '/header',
+    component: header
+  },
+  {
+    path: '/details',
+    component: details,
+  },
+  {
+  path: '/comment',
+    component: comment
   }
 ]
 
